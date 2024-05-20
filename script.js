@@ -1,17 +1,11 @@
-function firstNonRepeatedChar(str) {
-    // Write your code here
-    
-    for(let i = 0; i < str.length; i++)
-   {
- 
-       if (str.indexOf(str.charAt(i),str.indexOf(str.charAt(i))+1) == -1)
-       {
-           document.write(str[i])
- 
-           break
-       }
-   }
-   return null;
+function firstNonRepeatingCharacter(str) {
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+    if (str.indexOf(char) == i && str.indexOf(char, i + 1) == -1) {
+      return char;
+    }
+  }
+  return  "null";
 }
    }
    const input = prompt("Enter a string");
