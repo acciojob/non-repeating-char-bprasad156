@@ -3,10 +3,11 @@ function firstNonRepeatedChar(str) {
     
     for(var i=0;i<str.length;i++){
         var s=str.charAt(i)
-         if(s.IndexOf(c)===i&&s.IndexOf(c)===-1){
+         if(s.IndexOf(c)===i&&s.IndexOf(c,i+1)===-1){
             return c;
 
          }
+		
     }
     return null;
        
