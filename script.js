@@ -3,8 +3,8 @@ function firstNonRepeatedChar(str) {
     
     for(var i=0;i<str.length;i++){
         var s=str.charAt(i)
-         if(s.indexOf(c)===i&&s.indexOf(c,i+1)===-1){
-            return c;
+         if(s.indexOf(s)===i&&s.indexOf(s,i+1)===-1){
+            return s ;
 
          }
 		
